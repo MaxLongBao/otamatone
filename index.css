@@ -50,6 +50,28 @@
   left: 2px;
 }
 
+.open-mouth-up {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 30px solid white;
+  position: absolute;
+  left: 11px;
+  bottom: 80px;
+  }
+
+  .open-mouth-down {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 30px solid white;
+    position: absolute;
+    left: 11px;
+    bottom: 45px;
+    }
+
 .body {
   width: 40px;
   height: 500px;
@@ -127,6 +149,14 @@ input[type='range'] {
   display: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 600px) {
   .main {
     width: 300px;
@@ -159,6 +189,22 @@ input[type='range'] {
     height: 4px;
     bottom: 35px;
     left: 0px;
+  }
+
+  .open-mouth-up {
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    border-bottom: 15px solid white;
+    left: 3px;
+    bottom: 39px;
+  }
+  
+  .open-mouth-down {
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    border-top: 15px solid white;
+    left: 3px;
+    bottom: 20px;
   }
 
   .body {
