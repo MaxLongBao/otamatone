@@ -1,7 +1,5 @@
 .main {
   width: 500px;
-  /* width: 100%; */
-  /* height: 100vh; */
   height: 800px;
   border: 1px solid red;
   position: relative;
@@ -94,9 +92,30 @@ input[type='range'] {
   width: 170px;
   height: 40px;
   background-color: black;
+  border-radius: 40% 30%;
   position: absolute;
-  right: 100px;
-  top: 80px;
+  right: 102px;
+  top: 70px;
+}
+
+.first-curve {
+  width: 70px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  left: 40px;
+  top: 20px;
+}
+
+.second-curve {
+  width: 100px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  left: 100px;
+  bottom: 20px;
 }
 
 #start {
@@ -178,6 +197,26 @@ input[type='range'] {
     width: 80px;
     height: 15px;
     right: 80px;
-    top: 75px;
+    top: 70px;
+  }
+
+  .first-curve {
+    width: 35px;
+    height: 19px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+  }
+  
+  .second-curve {
+    width: 38px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    left: 50px;
+    bottom: 7px;
   }
 }
