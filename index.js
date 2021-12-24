@@ -47,18 +47,21 @@ setFrequency = (freq) => {
 const mouthUp = document.querySelector('.open-mouth-up');
 const mouthDown = document.querySelector('.open-mouth-down');
 
-const openCloseMouth = () => {
-  mouthUp.classList.add('visible');
+const openMouth = () => {
   mouthUp.classList.remove('hidden');
-  mouthDown.classList.add('visible');
   mouthDown.classList.remove('hidden');
+}
+
+const closeMouth = () => {
+  mouthUp.classList.add('hidden');
+  mouthDown.classList.add('hidden');
 }
 
 document.addEventListener('keydown', (e) => {
   const name = e.key;
   if (name === " ") {
     if (!e.repeat) {
-      openCloseMouth();
+      openMouth();
       isPlaying = true;
       console.log(isPlaying)
       handlePlay();
@@ -70,7 +73,7 @@ document.addEventListener('keyup', (e) => {
   const name = e.key;
   if (name === " ") {
     if (!e.repeat) {
-      openCloseMouth();
+      closeMouth();
       isPlaying = false;
       console.log(isPlaying)
       handlePlay();
@@ -99,15 +102,15 @@ document.addEventListener('touchend', function () {
 
 const head = document.querySelector('.head');
 head.addEventListener('touchstart', function(e) {
-  // e.preventDefault();
-  openCloseMouth()
+  e.preventDefault();
+  openMouth()
   isPlaying = true;
   handlePlay();
 })
 
 head.addEventListener('touchend', function(e) {
-  // e.preventDefault();
-  openCloseMouth()
+  e.preventDefault();
+  closeMouth();
   isPlaying = false;
   handlePlay();
 })

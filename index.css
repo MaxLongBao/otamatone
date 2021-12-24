@@ -1,7 +1,6 @@
 .main {
   width: 500px;
   height: 800px;
-  border: 1px solid red;
   position: relative;
   margin: 0 auto;
 }
@@ -59,18 +58,18 @@
   position: absolute;
   left: 11px;
   bottom: 80px;
-  }
+}
 
-  .open-mouth-down {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 30px solid white;
-    position: absolute;
-    left: 11px;
-    bottom: 45px;
-    }
+.open-mouth-down {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 30px solid white;
+  position: absolute;
+  left: 11px;
+  bottom: 45px;
+}
 
 .body {
   width: 40px;
@@ -147,10 +146,6 @@ input[type='range'] {
 
 .disappear {
   display: none;
-}
-
-.visible {
-  visibility: visible;
 }
 
 .hidden {
