@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+#main {
+  display: none;
+}
+
 .head {
   width: 220px;
   height: 200px;
@@ -81,7 +85,7 @@ input[type='range'] {
   width: 390px;
   -webkit-appearance: none;
   background-color: red;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 /* input[type='range']::-webkit-slider-runnable-track {

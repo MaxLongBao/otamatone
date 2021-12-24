@@ -21,10 +21,6 @@ const handlePlay = () => {
   }
 }
 
-const stop = () => {
-  oscillator.disconnect(audioCtx.destination);
-}
-
 const frequency = document.querySelector('#input-notes');
 
 frequency.addEventListener('input', function() {
@@ -48,8 +44,8 @@ setFrequency = (freq) => {
   oscillator.frequency.setValueAtTime(freq, audioCtx.currentTime);
 }
 
-const input = document.querySelector('#input-notes');
-input.addEventListener('click', handlePlay);
+// const input = document.querySelector('#input-notes');
+// input.addEventListener('click', handlePlay);
 
 document.addEventListener('keydown', (e) => {
   const name = e.key;
@@ -78,4 +74,33 @@ button.addEventListener('click', function () {
   oscillator.start();
   oscillator.disconnect(audioCtx.destination);
   button.classList.add("disappear");
+  document.querySelector('#main').removeAttribute('id');
 });
+
+const input = document.querySelector('#input-notes');
+input.addEventListener('touchstart', function() {
+  isNoteSelected = true;
+  handlePlay();
+  console.log(isNoteSelected)
+})
+
+document.addEventListener('touchend', function () {
+  isNoteSelected = false;
+  handlePlay();
+  console.log(isNoteSelected)
+})
+
+const head = document.querySelector('.head');
+head.addEventListener('touchstart', function(e) {
+  e.preventDefault();
+  isPlaying = true;
+  console.log(isPlaying)
+  handlePlay();
+})
+
+head.addEventListener('touchend', function(e) {
+  e.preventDefault();
+  isPlaying = false;
+  console.log(isPlaying)
+  handlePlay();
+})
