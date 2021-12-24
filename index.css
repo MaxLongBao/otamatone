@@ -1,5 +1,7 @@
 .main {
   width: 500px;
+  /* width: 100%; */
+  /* height: 100vh; */
   height: 800px;
   border: 1px solid red;
   position: relative;
@@ -85,24 +87,8 @@ input[type='range'] {
   width: 390px;
   -webkit-appearance: none;
   background-color: red;
-  /* opacity: 0; */
+  opacity: 0;
 }
-
-/* input[type='range']::-webkit-slider-runnable-track {
-  height: 10px;
-  -webkit-appearance: none;
-  color: #13bba4;
-  margin-top: -1px;
-} */
-
-/* input[type='range']::-webkit-slider-thumb {
-  width: 390px;
-  -webkit-appearance: none;
-  height: 10px;
-  cursor: ew-resize;
-  background: #434343;
-  box-shadow: -80px 0 0 80px #43e5f7;
-} */
 
 .tail {
   width: 170px;
@@ -120,4 +106,78 @@ input[type='range'] {
 
 .disappear {
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 300px;
+    height: 520px;
+  }
+
+  .head {
+    width: 100px;
+    height: 90px;
+    bottom: 60px;
+    left: 100px;
+  }
+
+  .right-eye {
+    width: 8px;
+    height: 8px;
+    bottom: 60px;
+    left: 70px;
+  }
+
+  .left-eye {
+    width: 8px;
+    height: 8px;
+    bottom: 60px;
+    left: 25px;
+  }
+
+  .mouth {
+    width: 100px;
+    height: 4px;
+    bottom: 35px;
+    left: 0px;
+  }
+
+  .body {
+    width: 15px;
+    height: 300px;
+    bottom: 145px;
+    left: 140px;
+  }
+
+  .notes {
+    width: 11px;
+    height: 270px;
+    left: 2px;
+    bottom: 10px;
+  }
+  
+  .notes input {
+    width: 270px;
+    height: 12px;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 118px;
+    left: -3px;
+    cursor: pointer;
+  }
+  
+  input[type='range'] {
+    width: 270px;
+    -webkit-appearance: none;
+    background-color: red;
+    opacity: 0;
+  }
+  
+  .tail {
+    width: 80px;
+    height: 15px;
+    right: 80px;
+    top: 75px;
+  }
 }
