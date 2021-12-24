@@ -98,7 +98,7 @@ document.addEventListener('touchend', function () {
 
 const head = document.querySelector('.head');
 head.addEventListener('touchstart', function(e) {
-  e.preventDefault();
+  // e.preventDefault();
   mouthUp.classList.add('visible');
   mouthUp.classList.remove('hidden');
   mouthDown.classList.add('visible');
@@ -108,7 +108,7 @@ head.addEventListener('touchstart', function(e) {
 })
 
 head.addEventListener('touchend', function(e) {
-  e.preventDefault();
+  // e.preventDefault();
   mouthUp.classList.add('hidden');
   mouthUp.classList.remove('visible');
   mouthDown.classList.add('hidden');
