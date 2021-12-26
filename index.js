@@ -131,8 +131,8 @@ colorBlack.addEventListener('click', function() {
   rightEye.style.background = 'white';
   leftEye.style.background = 'white';
   mouth.style.background = 'white';
-  mouthUp.style.borderBottonColor = 'white';
-  mouthDown.style.borderBottonColor = 'white';
+  mouthUp.style.borderBottomColor = 'white';
+  mouthDown.style.borderTopColor = 'white';
   notes.style.background = 'white';
 })
 
@@ -143,7 +143,7 @@ colorWhite.addEventListener('click', function() {
   rightEye.style.background = 'black';
   leftEye.style.background = 'black';
   mouth.style.background = 'black';
-  mouthUp.style.borderBottonColor = 'black';
-  mouthDown.style.borderBottonColor = 'black';
+  mouthUp.style.borderBottomColor = 'black';
+  mouthDown.style.borderTopColor = 'black';
   notes.style.background = 'black';
 })
