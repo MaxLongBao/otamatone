@@ -23,6 +23,10 @@ const handlePlay = () => {
 
 const frequency = document.querySelector('#input-notes');
 
+setFrequency = (freq) => {
+  oscillator.frequency.setValueAtTime(freq, audioCtx.currentTime);
+}
+
 frequency.addEventListener('input', function() {
   let freq = this.value;
   setFrequency(freq)
@@ -39,10 +43,6 @@ document.addEventListener('mouseup', function () {
   handlePlay();
   console.log(isNoteSelected)
 })
-
-setFrequency = (freq) => {
-  oscillator.frequency.setValueAtTime(freq, audioCtx.currentTime);
-}
 
 const mouthUp = document.querySelector('.open-mouth-up');
 const mouthDown = document.querySelector('.open-mouth-down');
@@ -113,4 +113,37 @@ head.addEventListener('touchend', function(e) {
   closeMouth();
   isPlaying = false;
   handlePlay();
+})
+
+const colorBlack = document.querySelector('.color-black');
+const colorWhite = document.querySelector('.color-white');
+const body = document.querySelector('.body');
+const tail = document.querySelector('.tail');
+const rightEye = document.querySelector('.right-eye');
+const leftEye = document.querySelector('.left-eye');
+const mouth = document.querySelector('.mouth');
+const notes = document.querySelector('.notes');
+
+colorBlack.addEventListener('click', function() {
+  head.style.background = 'black';
+  body.style.background = 'black';
+  tail.style.background = 'black';
+  rightEye.style.background = 'white';
+  leftEye.style.background = 'white';
+  mouth.style.background = 'white';
+  mouthUp.style.background = 'white';
+  mouthDown.style.background = 'white';
+  notes.style.background = 'white';
+})
+
+colorWhite.addEventListener('click', function() {
+  head.style.background = 'white';
+  body.style.background = 'white';
+  tail.style.background = 'white';
+  rightEye.style.background = 'black';
+  leftEye.style.background = 'black';
+  mouth.style.background = 'black';
+  mouthUp.style.background = 'black';
+  mouthDown.style.background = 'black';
+  notes.style.background = 'black';
 })
