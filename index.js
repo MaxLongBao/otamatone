@@ -35,13 +35,11 @@ frequency.addEventListener('input', function() {
 frequency.addEventListener('mousedown', function () {
   isNoteSelected = true;
   handlePlay();
-  console.log(isNoteSelected)
 })
 
 document.addEventListener('mouseup', function () {
   isNoteSelected = false;
   handlePlay();
-  console.log(isNoteSelected)
 })
 
 const mouthUp = document.querySelector('.open-mouth-up');
@@ -63,7 +61,6 @@ document.addEventListener('keydown', (e) => {
     if (!e.repeat) {
       openMouth();
       isPlaying = true;
-      console.log(isPlaying)
       handlePlay();
     }
   }
@@ -75,7 +72,6 @@ document.addEventListener('keyup', (e) => {
     if (!e.repeat) {
       closeMouth();
       isPlaying = false;
-      console.log(isPlaying)
       handlePlay();
     }
   }
