@@ -9,8 +9,8 @@ body {
 
 .main {
   width: 500px;
-  height: 800px;
-  position: relative;
+  height: 630px;
+  position: absolute;
   margin: 0 auto;
 }
 
@@ -19,8 +19,8 @@ body {
 }
 
 .head {
-  width: 220px;
-  height: 200px;
+  width: 160px;
+  height: 150px;
   background-color: black;
   border-radius: 100%;
   position: absolute;
@@ -29,70 +29,70 @@ body {
 }
 
 .right-eye {
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: white;
   border-radius: 100%;
   position: absolute;
-  bottom: 120px;
+  bottom: 90px;
   right: 45px;
 }
 
 .left-eye {
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: white;
   border-radius: 100%;
   position: absolute;
-  bottom: 120px;
+  bottom: 90px;
   left: 50px;
 }
 
 .mouth {
-  width: 216px;
+  width: 156px;
   height: 5px;
   background-color: white;
   border-radius: 10px;
   position: absolute;
-  bottom: 75px;
+  bottom: 50px;
   left: 2px;
 }
 
 .open-mouth-up {
   width: 0;
   height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
   border-bottom: 30px solid white;
   position: absolute;
-  left: 11px;
-  bottom: 80px;
+  left: 0px;
+  bottom: 53px;
 }
 
 .open-mouth-down {
   width: 0;
   height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
   border-top: 30px solid white;
   position: absolute;
-  left: 11px;
-  bottom: 45px;
+  left: 0px;
+  bottom: 23px;
 }
 
 .body {
-  width: 40px;
-  height: 500px;
+  width: 30px;
+  height: 400px;
   background-color: black;
   border-radius: 10px;
   position: absolute;
-  left: 228px;
-  bottom: 220px;
+  left: 200px;
+  bottom: 180px;
 }
 
 .notes {
-  width: 30px;
-  height: 390px;
+  width: 20px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   position: absolute;
@@ -106,13 +106,13 @@ body {
   transform-origin: 75px 75px;
   transform: rotate(-90deg);
   position: absolute;
-  top: 239px;
+  top: 148px;
   left: -4px;
   cursor: pointer;
 }
 
 input[type='range'] {
-  width: 390px;
+  width: 300px;
   -webkit-appearance: none;
   background-color: red;
   opacity: 0;
@@ -124,8 +124,8 @@ input[type='range'] {
   background-color: black;
   border-radius: 40% 30%;
   position: absolute;
-  right: 102px;
-  top: 56px;
+  right: 130px;
+  top: 40px;
 }
 
 .first-curve {
@@ -133,7 +133,7 @@ input[type='range'] {
   height: 50px;
   border-radius: 100%;
   position: absolute;
-  left: 40px;
+  left: 30px;
   top: 20px;
   background-color: #c2c2ff;
 }
